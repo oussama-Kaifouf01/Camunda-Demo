@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="diagram" name="diagram" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.2.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.16.0">
+  <decision id="Decision1" name="Decision1">
+    <decisionTable id="DecisionTable_15ju6ti" hitPolicy="FIRST">
+      <input id="Input_1" biodi:width="192" camunda:inputVariable="isSigRequired">
+        <inputExpression id="InputExpression_1" typeRef="boolean">
+          <text>isSigRequired</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1imr7k9" label="rejected" camunda:inputVariable="rejected">
+        <inputExpression id="LiteralExpression_1etqose" typeRef="boolean">
+          <text>rejected</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="signatureRequired" typeRef="string" biodi:width="192" />
+      <output id="OutputClause_0esvh6a" label="transactionRejected" name="transactionRejected" typeRef="string" />
+      <rule id="DecisionRule_0e46ls0">
+        <inputEntry id="UnaryTests_0kcfxbd">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04ufdn6">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hpp1vc">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0dgrhp1">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1u5yqic">
+        <inputEntry id="UnaryTests_1g01fx1">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1x4bjr3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hmin5c">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1lr1o0h">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07vfitk">
+        <inputEntry id="UnaryTests_0xbcj85">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zlaebm">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cm9ggd">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ohqq34">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ie0g0k">
+        <inputEntry id="UnaryTests_16xgxcs">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w6uma5">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hl5nl1">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1nlz7je">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision1">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
