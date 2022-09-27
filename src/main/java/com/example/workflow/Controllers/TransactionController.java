@@ -29,7 +29,9 @@ public class TransactionController {
     @RequestMapping(value="/faxManager/signature",method = RequestMethod.POST)
     public void faxManager(@RequestBody Map<String, String> body)
     {
-        camundaFormService.setSignatureRequiredAndCompleteTask(body.get("id"), Boolean.parseBoolean(body.get("isSigRequired")));
+        String businessKey = body.get("businessKey");
+
+
 
     }
 

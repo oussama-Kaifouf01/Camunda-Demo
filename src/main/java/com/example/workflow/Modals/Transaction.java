@@ -1,12 +1,16 @@
 package com.example.workflow.Modals;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "Transaction")
 public class Transaction {
 
     @Id
+    @GeneratedValue
     private int id;
     private int senderId;
     private int recipientId;
